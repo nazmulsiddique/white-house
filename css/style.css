@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc800;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #A37507;
+    --bs-secondary: #000;
+    --bs-success: #fff;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc800;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-body-font-size: 1rem;
+    --bs-title-font-size: 60px;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #A37507;
+    --bs-link-color: #A37507;
+    --bs-link-hover-color: #A37507;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+body{
+    margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--bs-secondary);
+}
+a {
+    color: var(--bs-link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--bs-link-hover-color);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .text-primary {
+    color: var(--bs-link-color) !important;
+  }
+.mt-10{
+    margin-top: 80px !important;
+  }
+.mt-15{
+    margin-top: 120px !important;
+  }
+.logo{
+    width: 35px;
+    height: 40px !important;
+}
+.navbar-bg{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 80px;
+}
+.navbar-text a{
+  color: var(--bs-white) !important;
+}
+.hero-title h2{
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 84px;
+    text-transform: uppercase;
+}
+.leaf-item{
+    width: 800px;
+    height: 250px;
+}
+.leaf-single-item img{
+    width: 125px;
+}
+.leaf-single-item-center img{
+    width: 230px;
+}
+.fixed-headline{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.fixed-headline h2 {
+text-align: center;
+font-size: 72px;
+font-style: normal;
+font-weight: 500;
+line-height: 86px;
+text-transform: uppercase;
+}
+.sticky-top-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+    z-index: 1020;
+}
+.about-content img{
+  position: relative;
+  z-index: 1022;
+}
+/* style hero section */
+
+  /* #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #212529;
+  } */
+  /* #mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  #mainNav .navbar-brand {
+    color: #ffc800;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+  }
+  #mainNav .navbar-brand img {
+    height: 1.5rem;
+  } */
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #ffc800;
+  }
+  
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: transparent;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg,
+    #mainNav.navbar-shrink .navbar-brand img {
+      height: 2rem;
+    }
+    #mainNav .navbar-nav .nav-item {
+      padding: 18px;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+  }
+  /*header.masthead {*/
+  /*  padding-top: 28rem;*/
+  /*    padding-bottom: 6rem;*/
+  /*  color: #fff;*/
+  /*  background-image: url("../images/hero-image.jpg");*/
+  /*  background-repeat: no-repeat;*/
+  /*  background-attachment: scroll;*/
+  /*  background-position: center center;*/
+  /*  background-size: cover;*/
+  /*}*/
+  .masthead-heading{
+    width: 610px;
+  }
+  .masthead-subheading{
+    width: 410px;
+  }
+  header.masthead .masthead-subheading p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: start;
+  }
+  header.masthead .masthead-heading h2{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 84px;
+    text-transform: uppercase;
+    text-align: start;
+  }
+  .carousel-inner .carousel-item > img {
+    -webkit-animation: zoom-image 20s infinite;
+    -o-animation: zoom-image 20s infinite;
+    animation: zoom-image 20s infinite; 
+  }
+  @keyframes zoom-image {
+    from {
+       transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /*header.masthead {*/
+    /*  padding-top: 28rem;*/
+    /*  padding-bottom: 6rem;*/
+    /*}*/
+    header.masthead .masthead-subheading {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+    }
+    header.masthead .masthead-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  /* Our unique approach  */
+  .our-approach-section{
+    margin: 120px 0px;
+  }
+  .approach-title h2{
+    color: var(--bs-secondary);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40.889px;
+    text-transform: capitalize;
+  }
+  .approach-auto-slide p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 25px 50px;
+    width: 540px;
+  }
+  /* .carousel-indicators-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  .custom-indicators{
+    position: unset;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: unset;
+    margin-bottom: -1rem;
+    margin-left: unset;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: 440px;
+    text-align: center;
+    color: #A37507;
+    font-family: 'Playfair Display';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: unset;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: unset;
+    margin-top: -100px;
+    margin-left: unset;
+    text-indent: unset;
+  }
+  .inicator-section{
+    margin-top: 80px;
+  }
+
+ /* Our Project Section  */
+ .our-project-section{
+    margin-bottom: 120px;
+ }
+  .our-project-section .title{
+    color: var(--bs-secondary);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .our-project-section .nav-link{
+    border: 1px solid #575757;
+    background: transparent;
+    display: flex;
+    width: 240px;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px;
+  }
+  .our-project-section .nav-link{
+    color: #575757;
+    font-family: 'Be Vietnam Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .our-project-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-primary);
+    background-color: transparent;
+    border: 1px solid var(--bs-border-color);
+}
+.arrow-icon{
+  margin-left: -70px;
+}
+.arrow-icon-2{
+  margin-left: 0px !important;
+  padding-left: 120px;
+}
+.project-details{
+  margin: 80px;
+}
+.project-details-2{
+  margin: 80px 145px 80px 20px !important;
+}
+.project-details h2{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-details p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.arrow-icon i {
+  font-size: 30px;
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-border-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 65px;
+  rotate: 45deg;
+}
+.arrow-icon i:hover {
+  font-size: 30px;
+  color: var(--bs-light);
+  background: var(--bs-primary);
+  outline: 1px solid var(--bs-primary);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 65px;
+  rotate: 45deg;
+  outline-offset: 3px;
+}
+/* Land Owner Section  */
+.landowner-section{
+  padding: 0px 0px 60px 0px;
+  background: #F7F7F7;
+}
+.landowner-section .card{
+  background: transparent;
+  border: 0px solid;
+}
+.landowner-section img{
+  position: relative;
+  z-index: 1022;
+  margin-top: -320px;
+}
+.sticky-top-landowner {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  z-index: 1020;
+}
+.overlay-custom-text{
+  margin-top: 150px;
+}
+.overlay-custom-text h2{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+.overlay-custom-text p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.overlay-custom-text a{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--bs-success);
+  cursor: pointer;
+  z-index: 1053;
+  position: relative;
+}
+/* key-point-section Section  */
+.key-point-section{
+  background: #F7F7F7;
+  padding: 120px 0px;
+}
+.key-point-section .title{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 75px;
+  width: 520px;
+}
+.key-point-section .subtitle{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.single-key-point{
+  background: var(--bs-success);
+  border-radius: 5px;
+  padding: 20px ;
+  display: block;
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+.single-key-point h2{
+  margin-top: 200px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#keyPoint .box{
+  position: relative;
+}
+#keyPoint .text{
+  color: var(--bs-success);
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+#keyPoint .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+  background: #A37507;
+}
+#keyPoint .box:hover .overlay{
+  height: 100%;
+  background: #A37507;
+  color: var(--bs-success);
+  display: block;
+  border-radius: 5px;
+}
+
+/* gallery-section style */
+.gallery-section{
+  background: #F7F7F7;
+  padding: 60px 0px;
+}
+.gallery-overly-image img{
+  width: 212px;
+  height: 250px;
+}
+.gallery-overly-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1022;
+}
+/* contact-section style */
+.contact-section{
+  padding: 120px 0px;
+  background: #fff;
+}
+.contact-section h2{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 75px;
+}
+.contact-section p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  outline: none;
+  border-radius: 0px !important;
+  background: transparent !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0px #a374071c;
+  border-bottom: 1px solid #a3740757;
+}
+.submit-button{
+  display: flex;
+  width: 240px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 2px solid #A37507;
+  color: var(--bs-primary);
+    background: var(--bs-body-bg);
+  margin-top: 50px;
+}
+.submit-button:hover{
+  display: flex;
+  width: 240px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 2px solid #A37507;
+  color: var(--bs-primary);
+}
+.contact-section select{
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  border-bottom: 1px solid #000;
+  background: transparent !important;
+}
+.contact-section select:focus{
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  border-bottom: 1px solid #000;
+}
+.address{
+  padding: 20px 50px;
+  width: 400px;
+  border-left: 1px solid #00000055;
+}
+.address h2{
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.address p{
+  font-family: "Be Vietnam Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: none;
+}
+.address i{
+  color: var(--bs-primary);
+  margin-right: 15px;
+}
+.icon-address{
+  margin-bottom: 20px;
+  float: left;
+  width: 20px;
+  padding-top: 15px;
+}
+/* footer-section style */
+.footer-section{
+  padding: 80px 0px;
+}
+.footer-logo img{
+  width: 170px;
+}
+.footer-section .list-group-item{
+  background: transparent;
+  border: 0px solid;
+  padding: 5px 7px;
+}
+.footer-section .list-group-item:hover a{
+  background: transparent;
+  border-bottom: 1px solid var(--bs-primary);
+  color: var(--bs-success);
+  padding: 10px 0;
+}
+.footer-section .list-group-item a{
+  color: #848484;
+  font-family: 'Be Vietnam Pro';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+.bottom-to-top{
+  text-align: center;
+  cursor: pointer;
+  margin-top: -105px;
+}
+.bottom-to-top i {
+  font-size: 30px;
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-border-color);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 33px;
+}
+.bottom-to-top i:hover {
+  font-size: 30px;
+  color: var(--bs-light);
+  background: var(--bs-primary);
+  outline: 1px solid var(--bs-primary);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 33px;
+  outline-offset: 3px;
+}
+.social-share-icon img{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.copyright p{
+  color: #848484;
+  text-align: right;
+  font-family: 'Be Vietnam Pro';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+      .navbar-bg {
+    height: 50px;
+}
+.logo {
+  width: 30px;
+  height: 35px !important;
+}
+  .navbar-collapse {
+    background: rgb(0, 0, 0, 0.8) !important;
+    padding: 10px;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+ .navbar-collapse {
+    background: rgb(0, 0, 0, 0.8) !important;
+    padding: 10px;
+  }
+  .masthead-heading {
+    width: 370px;
+    position: relative;
+    top: 40px;
+  }
+  .masthead-subheading {
+    width: 370px;
+    position: relative;
+    top: 40px;
+}
+/*  header.masthead {*/
+/*    padding-top: 8rem;*/
+/*    padding-bottom: 6rem;*/
+/*    color: #fff;*/
+/*    background-image: url("../images/hero-image.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: scroll;*/
+/*    background-position: center center;*/
+/*    background-size: cover;*/
+/*}*/
+header.masthead .masthead-heading h2 {
+    padding-top: 100px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+.leaf-item {
+  width: 100%;
+  height: 200px;
+  }
+    .leaf-single-item img {
+    width: 120px;
+}
+.leaf-single-item-center img {
+  width: 130px;
+}
+.fixed-headline {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+  .fixed-headline h2 {
+    text-align: center;
+    font-size: 22px;
+    width: 400px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 86px;
+    text-transform: uppercase;
+}
+ .carousel-indicators [data-bs-target]{
+    width: 130px;
+    text-align: center;
+    color: #A37507;
+    font-family: 'Playfair Display';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: unset;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: unset;
+    margin-top: -100px;
+    margin-left: unset;
+    text-indent: unset;
+  }
+  /* our Project */
+    .our-project-section {
+    margin-bottom: 50px;
+    }
+    .mt-15 {
+      margin-top: 50px !important;
+    }
+  .our-project-section .nav-link{
+    border: 1px solid #575757;
+    background: transparent;
+    display: flex;
+    width: auto;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px;
+  }
+  .project-details h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .project-details {
+    margin: 20px;
+  }
+    .project-details-2 {
+    margin: 20px !important;
+}
+ .arrow-icon{
+    margin-left: -50px;
+  }
+  .arrow-icon-2{
+    margin-left: 0px !important;
+    padding-left: 10px !important;
+  }
+  .arrow-icon i {
+    font-size: 30px;
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-border-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 40px;
+    rotate: 45deg;
+  }
+  .arrow-icon i:hover {
+    font-size: 30px;
+    color: var(--bs-light);
+    background: var(--bs-primary);
+    outline: 1px solid var(--bs-primary);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 40px;
+    rotate: 45deg;
+    outline-offset: 3px;
+  }
+  /* Land owner section */
+  .overlay-custom-text {
+    margin-top: 50px;
+  }
+  .overlay-custom-text h2 {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+   .landowner-section img{
+    margin-top: -160px;
+  }
+  /* Key Point section */
+    .key-point-section {
+        padding: 50px 0px;
+    }
+ .key-point-section .title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    width: 320px;
+  }
+  .gallery-section {
+        padding: 30px 0px;
+    }
+  /* Contact section */
+  .contact-section {
+        padding: 50px 0px;
+    }
+  .contact-section h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 75px;
+  }
+    .address {
+    padding: 10px;
+    width: 350px;
+    border-left: 0px solid #00000055;
+  }
+  /* Approch section */
+    .our-approach-section {
+        margin: 50px 0px;
+    }
+  .approach-auto-slide p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 10px;
+    width: 100%;
+  }
+  /* Copyright section */
+  .footer-section {
+  padding: 80px 0px 10px 0px;
+}
+  .bottom-to-top i {
+    font-size: 30px;
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-border-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  .bottom-to-top i:hover {
+    font-size: 30px;
+    color: var(--bs-light);
+    background: var(--bs-primary);
+    outline: 1px solid var(--bs-primary);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 20px;
+    outline-offset: 3px;
+  }
+  
+}
+
+@media screen and (max-width: 370px) {
+  .masthead img{
+    height: 230px;
+  }
+  .masthead .carousel-caption {
+    position: absolute;
+    right: 5%;
+    bottom: 1.25rem;
+    left: 2%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+  .masthead-heading {
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+  .masthead-subheading {
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+  header.masthead .masthead-heading h2 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .leaf-item {
+  width: 100%;
+  height: 120px;
+  }
+  .leaf-single-item img {
+    width: 90px;
+}
+ .leaf-single-item-center img {
+  width: 110px;
+  }
+ .fixed-headline {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+  }
+  .fixed-headline h2 {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.approach-title h2 {
+  color: var(--bs-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40.889px;
+  text-transform: capitalize;
+}
+  .carousel-indicators [data-bs-target]{
+    width: 110px;
+    text-align: center;
+    color: #A37507;
+    font-family: 'Playfair Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: unset;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: unset;
+    margin-top: -100px;
+    margin-left: unset;
+    text-indent: unset;
+  }
+  .arrow-icon i {
+    font-size: 30px;
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-border-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 30px;
+    rotate: 45deg;
+}
+  .overlay-custom-text h2 {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+  .gallery-overly-image img {
+    width: 120px;
+    height: 140px;
+}
+  .address {
+    padding: 10px;
+    width: 350px;
+    border-left: 0px solid #00000055;
+  }
+.footer-section {
+  padding: 80px 0px 10px 0px;
+}
+}
