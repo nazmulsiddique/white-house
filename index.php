@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="<?php bloginfo('charset'); ?>">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php bloginfo('name'); ?></title>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <?php wp_head(); ?>
-    </head>
-
-    <body>
+<?php get_header(); ?>
        
           <div class="main-wrapper">
             <nav class="navbar navbar-expand-lg navbar-bg text-light fixed-top" id="mainNav">
@@ -25,7 +13,7 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarResponsive">
                       <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                         <li class="nav-item"><a class="nav-link" href="#keyPoint">Why Us</a></li>
+                         <li class="nav-item"><a class="nav-link" href="https://tstwhitehouseltd.com/why-us/">Why Us</a></li>
                           <li class="nav-item"><a class="nav-link" href="#ourProject">Our Projects</a></li>
                       </ul>
                       <span class="navbar-text text-white ms-md-4">
@@ -538,61 +526,5 @@
                 </div>
               </div>
             </div>
-            <div class="footer-section bg-black">
-              <div class="container">
-                <div class="row">
-                  <div class="col-8 col-md-3 footer-logo">
-                    <img src="<?php echo get_theme_mod('footer_logo_image') ?>" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-1 col-md-6"></div>
-                  <div class="col-3 col-md-3 bottom-to-top" id="scrollToTopBtn">
-                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6 col-md-3 mt-3">
-                    <?php dynamic_sidebar('footer-1'); ?>
-                    <!-- <ul class="list-group list-group-flush mt-4">
-                      <li class="list-group-item"><a href="">Home</a></li>
-                      <li class="list-group-item"><a href="">Explore Locations</a></li>
-                      <li class="list-group-item"><a href="">Why Us</a></li>
-                      <li class="list-group-item"><a href="">Warranty</a></li>
-                      <li class="list-group-item"><a href="">Partners</a></li>
-                    </ul> -->
-                  </div>
-                  <div class="col-6 col-md-3 mt-3">
-                    <?php dynamic_sidebar('footer-2'); ?>
-                    <!-- <ul class="list-group list-group-flush mt-4">
-                      <li class="list-group-item"><a href="">Our Approach</a></li>
-                      <li class="list-group-item"><a href="">Financing</a></li>
-                      <li class="list-group-item"><a href="">Join Our Team</a></li>
-                      <li class="list-group-item"><a href="">Contact Us</a></li>
-                    </ul> -->
-                  </div>
-                  <div class="col-md-3">
-                    <?php dynamic_sidebar('footer-3'); ?>
-                    <!-- <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><a href="">(+880) 1726695887</a></li>
-                      <li class="list-group-item"><a href="">info@whitehouserealestate.com</a></li>
-                      <li class="social-share-icon mt-3 ms-2">
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/fb.png" alt=""></a>
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/tw.png" alt=""></a>
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/ig.png" alt=""></a>
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/images/in.png" alt=""></a>
-                      </li>
-                    </ul> -->
-                  </div>
-                  <div class="col-md-3 d-flex align-items-end">
-                    <div class="copyright mt-3 mt-md-0">
-                      <p><?php echo get_theme_mod('copyright_section') ?></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
         </div>
-        <script>
-          AOS.init();
-        </script>
-    </body>
-</html>
+<?php get_footer(); ?>
